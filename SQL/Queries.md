@@ -1,79 +1,122 @@
-#SYLLABUS QUERRIES:
+#SYLLABUS QUERIES:
 
 
 ```
 
-1)      SELECT Eno, Ename, Job_type, Hire_date FROM EMPLOYEE;
+1)      SELECT
+        Eno, Ename, Job_type, Hire_date
+        FROM EMPLOYEE;
 
 ```
 ```
 
-2)      SELECT DISTINCT Job_type FROM EMPLOYEE;
+2)      SELECT
+        DISTINCT Job_type
+        FROM EMPLOYEE;
 
 ```
 ```
 
-3)      SELECT CONCAT(Ename, ',', Job_type) FROM EMPLOYEE;
+3)      SELECT
+        CONCAT(Ename, ',', Job_type)
+        FROM EMPLOYEE;
 
 ```
 ```
 
-4)      SELECT CONCAT(Eno, ', ', Ename, ', ', Job_type, ', ', Manager, ', ', Hire_date, ', ', Dno, ', ', Commission, ', ', Salary) AS THE_OUTPUT FROM EMPLOYEE;
+4)      SELECT
+        CONCAT(Eno, ', ', Ename, ', ', Job_type, ', ', Manager, ', ', Hire_date, ', ', Dno, ', ', Commission, ', ', Salary)
+        AS THE_OUTPUT
+        FROM EMPLOYEE;
 
 ```
 ```
 
-5)      SELECT Ename, Salary FROM EMPLOYEE WHERE Salary > 2850;
+5)      SELECT
+        Ename, Salary
+        FROM EMPLOYEE
+        WHERE Salary > 2850;
 
 ```
 ```
 
-6)      SELECT Ename, Dno FROM EMPLOYEE WHERE Eno = '7900';
+6)      SELECT
+        Ename, Dno
+        FROM EMPLOYEE
+        WHERE Eno = '7900';
 
 ```
 ```
 
-7)      SELECT Ename, Salary FROM EMPLOYEE WHERE Salary NOT BETWEEN 1500 AND 2850;
+7)      SELECT
+        Ename, Salary
+        FROM EMPLOYEE
+        WHERE Salary NOT BETWEEN 1500 AND 2850;
 
 ```
 ```
 
-8)      SELECT Ename, Dno FROM EMPLOYEE WHERE Dno IN (1, 3) ORDER BY Ename ASC;
+8)      SELECT
+        Ename, Dno
+        FROM EMPLOYEE
+        WHERE Dno IN (1, 3)
+        ORDER BY Ename ASC;
 
 ```
 ```
 
-9)      SELECT Ename, Hire_date FORM EMPLOYEE WHERE YEAR(Hire_date) = '2018';
+9)      SELECT
+        Ename, Hire_date
+        FORM EMPLOYEE
+        WHERE YEAR(Hire_date) = '2018';
 
 ```
 ```
 
-10)     SELECT Ename, Job_type FROM EMPLOYEE WHERE Manager = NULL;
+10)     SELECT
+        Ename, Job_type
+        FROM EMPLOYEE
+        WHERE Manager = NULL;
 
 ```
 ```
 
-11)     SELECT Ename, Salary, Commission FROM EMPLOYEE WHERE Commission IS NOT NULL;
+11)     SELECT
+        Ename, Salary, Commission
+        FROM EMPLOYEE
+        WHERE Commission IS NOT NULL;
 
 ```
 ```
 
-12)     SELECT * FROM EMPLOYEE ORDER BY Commission DESC;     /  Salary DESC;
+12)     SELECT
+        *
+        FROM EMPLOYEE
+        ORDER BY Commission DESC;     /  Salary DESC;
 
 ```
 ```
 
-13)     SELECT Ename FROM EMPLOYEE WHERE Ename LIKE '__A%';
+13)     SELECT
+        Ename
+        FROM EMPLOYEE
+        WHERE Ename LIKE '__A%';
 
 ```
 ```
 
-14)     SELECT Ename FROM EMPLOYEE WHERE (Ename LIKE '%R%R%' OR '%A%A%') AND (Dno = 30 OR Manager = '7788');
+14)     SELECT
+        Ename
+        FROM EMPLOYEE
+        WHERE (Ename LIKE '%R%R%' OR '%A%A%') AND (Dno = 30 OR Manager = '7788');
 
 ```
 ```
 
-15)     SELECT Ename, Salary, Commission FROM EMPLOYEE WHERE Commission = 14+(Salary + (0.05*Salary));
+15)     SELECT
+        Ename, Salary, Commission
+        FROM EMPLOYEE
+        WHERE Commission = 14+(Salary + (0.05*Salary));
 
 ```
 ```
@@ -83,17 +126,21 @@
 ```
 ```
 
-17)     
+17)     < NOT YET DONE >
 
 ```
 ```
 
-18)     SELECT Ename, CEIL(DATEDIFF(CURDATE(), HIRE_DATE)/30) AS 'NUMBER OF MONTHS' FROM EMPLOYEE;
+18)     SELECT
+        Ename, CEIL(DATEDIFF(CURDATE(), HIRE_DATE)/30) AS 'NUMBER OF MONTHS'
+        FROM EMPLOYEE;
 
 ```
 ```
 
-19)     SELECT CONCAT(Ename, ' earns ', Salary, ' monthly but wants ', 3*Salary) AS 'DREAM SALARY' FROM EMPLOYEE;
+19)     SELECT
+        CONCAT(Ename, ' earns ', Salary, ' monthly but wants ', 3*Salary) AS 'DREAM SALARY'
+        FROM EMPLOYEE;
 
 ```
 ```

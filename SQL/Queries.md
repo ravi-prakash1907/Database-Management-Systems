@@ -1,4 +1,4 @@
-For tables, please refer to [this link](Table)
+For tables, please refer to [this link](./Table)
 
 # SYLLABUS QUERIES:
 

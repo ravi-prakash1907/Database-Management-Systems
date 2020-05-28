@@ -1,3 +1,5 @@
+For tables, please refer to [this link](Table)
+
 # SYLLABUS QUERIES:
 
 
